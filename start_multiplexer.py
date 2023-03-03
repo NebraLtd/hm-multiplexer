@@ -22,7 +22,7 @@ def read_ttn_config():
 
 def main():
     bin = '/usr/local/bin/gwmp-mux'
-    cmd = '%s --client helium-miner:1680' % bin
+    cmd = '%s --client helium-miner:1680 --client thix-forwarder:1680' % bin
 
     ttn_config = read_ttn_config()
     if ttn_config.get('ttn_enabled', False):
